@@ -1,0 +1,20 @@
+@import 'base/fonts';
+
+* {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+.container {
+	width: 86.92%;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+}
+.br {
+	display: none;
+}
+
+@import 'blocks/title';
