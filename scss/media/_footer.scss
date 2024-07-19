@@ -1,0 +1,152 @@
+@media (max-width:1720px) {
+    .footer {
+        &_socials {
+            & > div {
+                border-radius: 10px;
+            }
+        }
+        &_left {
+            .title {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width:1600px) {
+    .footer {
+        &_left {
+            .title {
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media (max-width:1440px) {
+    .footer {
+        &_contact {
+            img {
+                height: 28px;
+            }
+            &:last-child {
+                img {
+                    height: 20px;
+                }
+            }
+        }
+        &_left {
+            .title {
+                font-size: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .footer {
+        &_wrapper {
+            gap: 2.1%;
+        }
+        &_links {
+            .title {
+                font-size: 14px;
+                &_20 {
+                    font-size: 16px;
+                }
+            }
+        }
+        &_socials {
+            & > div {
+                border-radius: 6px;
+            }
+        }
+        &_left {
+            .title {
+                font-size: 8px;
+            }
+        }
+        &_right {
+            .title_24 {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+	.footer {
+        margin-top: 60px;
+        padding: 18px 0 13px 0;
+        &_wrapper {
+            flex-wrap: wrap;
+            gap: 35px 6%;
+        }
+        &_left {
+            gap: 12px;
+            width: 56%;
+            .title {
+                font-size: 12px;
+            }
+        }
+        &_logo {
+            width: 81.71%;
+            img {
+                max-width: 202px;
+            }
+        }
+        &_right {
+            gap: 57px;
+            width: 100%;
+            margin-left: 0;
+        }
+        &_contacts {
+            gap: 23px;
+        }
+        &_links {
+            width: 47%;
+            .title_20 {
+                font-size: 20px;
+            }
+        }
+        &_contact {
+            gap: 10px;
+            img {
+                height: 22px;
+            }
+            &:last-child {
+                img {
+                    height: 16px;
+                }
+            }
+        }
+        &_target {
+            margin: 0 auto;
+        }
+        &_socials {
+            gap: 8.5%;
+            & > div {
+                width: 13.14%;
+                padding-top: 13.14%;
+                border-radius: 3px;
+            }
+        }
+        &_bottom {
+            margin-top: 23px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        &_socials {
+            & > div {
+                width: 17.14%;
+                padding-top: 17.14%;
+            }
+        }
+        &_target {
+            .title {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+
+}
