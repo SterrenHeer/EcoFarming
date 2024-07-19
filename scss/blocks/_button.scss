@@ -2,15 +2,15 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    padding: 19px;
+    padding: 0.989vw;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.52vw;
     background: #015019;
     transition: all 0.2s ease-in-out;
 	text-align: center;
     font-family: "CenturyGothic", sans-serif;
 	font-weight: 700;
-    font-size: 24px;
+    font-size: 1.25vw;
     color: #fff;
     cursor: pointer;
     &:hover {
@@ -18,12 +18,12 @@
         background: rgba(#015019, 0.8);
     }
 	&_header {
-        padding: 5px;
+        padding: 0.26vw;
         border: 1px solid #fff;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         font-family: "Lato", sans-serif;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 1.041vw;
         text-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 	}
 }

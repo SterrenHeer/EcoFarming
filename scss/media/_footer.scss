@@ -1,134 +1,68 @@
-@media (max-width:1720px) {
-    .footer {
-        &_socials {
-            & > div {
-                border-radius: 10px;
-            }
-        }
-        &_left {
-            .title {
-                font-size: 14px;
-            }
-        }
-    }
-}
-@media (max-width:1600px) {
-    .footer {
-        &_left {
-            .title {
-                font-size: 12px;
-            }
-        }
-    }
-}
-@media (max-width:1440px) {
-    .footer {
-        &_contact {
-            img {
-                height: 28px;
-            }
-            &:last-child {
-                img {
-                    height: 20px;
-                }
-            }
-        }
-        &_left {
-            .title {
-                font-size: 10px;
-            }
-        }
-    }
-}
-@media (max-width: 1200px) {
-    .footer {
-        &_wrapper {
-            gap: 2.1%;
-        }
-        &_links {
-            .title {
-                font-size: 14px;
-                &_20 {
-                    font-size: 16px;
-                }
-            }
-        }
-        &_socials {
-            & > div {
-                border-radius: 6px;
-            }
-        }
-        &_left {
-            .title {
-                font-size: 8px;
-            }
-        }
-        &_right {
-            .title_24 {
-                font-size: 16px;
-            }
-        }
-    }
-}
 @media (max-width: 992px) {
 	.footer {
-        margin-top: 60px;
-        padding: 18px 0 13px 0;
+        margin-top: 16.666vw;
+        padding: 5vw 0 3.61vw 0;
         &_wrapper {
             flex-wrap: wrap;
-            gap: 35px 6%;
+            gap: 9.72vw 6%;
         }
         &_left {
-            gap: 12px;
+            gap: 3.333vw;
             width: 56%;
             .title {
-                font-size: 12px;
+                font-size: 3.333vw;
             }
         }
         &_logo {
             width: 81.71%;
             img {
-                max-width: 202px;
+                width: 33.33vw;
             }
         }
         &_right {
-            gap: 57px;
+            gap: 15.833vw;
             width: 100%;
             margin-left: 0;
         }
         &_contacts {
-            gap: 23px;
+            gap: 6.388vw;
         }
         &_links {
+            gap: 3.333vw;
             width: 47%;
             .title_20 {
-                font-size: 20px;
+                font-size: 5.555vw;
+                margin-bottom: 1.944vw;
             }
         }
         &_contact {
-            gap: 10px;
+            gap: 2.777vw;
             img {
-                height: 22px;
+                height: 6.111vw;
             }
             &:last-child {
                 img {
-                    height: 16px;
+                    height: 4.444vw;
                 }
             }
         }
         &_target {
+            gap: 1.111vw;
             margin: 0 auto;
+            img {
+                width: 45.83vw;
+            }
         }
         &_socials {
             gap: 8.5%;
             & > div {
                 width: 13.14%;
                 padding-top: 13.14%;
-                border-radius: 3px;
+                border-radius: 0.833vw;
             }
         }
         &_bottom {
-            margin-top: 23px;
+            margin-top: 6.388vw;
         }
     }
 }
@@ -142,7 +76,7 @@
         }
         &_target {
             .title {
-                font-size: 14px;
+                font-size: 3.888vw;
             }
         }
     }

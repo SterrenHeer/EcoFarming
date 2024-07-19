@@ -1,6 +1,6 @@
 .footer {
-    margin-top: 61px;
-    padding: 41px 0 18px 0;
+    margin-top: 3.177vw;
+    padding: 2.135vw 0 0.937vw 0;
     background: #001800;
     &_wrapper {
         display: flex;
@@ -14,7 +14,7 @@
         flex-direction: column;
     }
     &_left {
-        gap: 26px;
+        gap: 1.354vw;
         width: 14%;
         .title {
             text-decoration: underline;
@@ -33,29 +33,40 @@
         margin-left: auto;
     }
     &_contacts {
-        gap: 37px;
+        gap: 1.927vw;
     }
     &_contact {
         display: flex;
         align-items: center;
-        gap: 19px;
+        gap: 0.989vw;
         & > div {
             display: flex;
             flex-direction: column;
         }
-        img:hover {
-            transform: scale(1.2);
+        img {
+            height: 1.822vw;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        &:last-child {
+            img {
+                height: 1.302vw;
+            }
         }
     }
     &_links {
-        gap: 12px;
+        gap: 0.625vw;
         .title_20 {
-            margin-bottom: 7px;
+            margin-bottom: 0.364vw;
         }
     }
     &_target {
         align-items: end;
-        gap: 4px;
+        gap: 0.208vw;
+        img {
+            width: 8.593vw;
+        }
     }
     &_socials {
         display: flex;
@@ -67,7 +78,7 @@
             align-items: center;
             width: 19.31%;
             padding-top: 19.31%;
-            border-radius: 15px;
+            border-radius: 0.781vw;
             backdrop-filter: blur(26.266666412353516px);
             box-shadow: inset -1px 1px 1px 0 rgba(255, 255, 255, 0.4), inset 1px -1px 1px 0 rgba(214, 214, 214, 0.4);
             background: rgba(255, 255, 255, 0.1);
@@ -90,7 +101,7 @@
         }
     }
     &_bottom {
-        margin-top: 82px;
+        margin-top: 4.27vw;
         text-align: center;
         color: #fff;
     }
