@@ -1,0 +1,97 @@
+.footer {
+    margin-top: 61px;
+    padding: 41px 0 18px 0;
+    background: #001800;
+    &_wrapper {
+        display: flex;
+        gap: 3.1%;
+        .title {
+            color: #fff;
+        }
+    }
+    &_left, &_right, &_contacts, &_links, &_target {
+        display: flex;
+        flex-direction: column;
+    }
+    &_left {
+        gap: 26px;
+        width: 14%;
+        .title {
+            text-decoration: underline;
+            color: #afd184;
+            text-wrap: nowrap;
+        }
+    }
+    &_logo {
+        width: 86.69%;
+        img {
+            width: 100%;
+        }
+    }
+    &_right {
+        justify-content: space-between;
+        margin-left: auto;
+    }
+    &_contacts {
+        gap: 37px;
+    }
+    &_contact {
+        display: flex;
+        align-items: center;
+        gap: 19px;
+        & > div {
+            display: flex;
+            flex-direction: column;
+        }
+        img:hover {
+            transform: scale(1.2);
+        }
+    }
+    &_links {
+        gap: 12px;
+        .title_20 {
+            margin-bottom: 7px;
+        }
+    }
+    &_target {
+        align-items: end;
+        gap: 4px;
+    }
+    &_socials {
+        display: flex;
+        gap: 7.72%;
+        & > div {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 19.31%;
+            padding-top: 19.31%;
+            border-radius: 15px;
+            backdrop-filter: blur(26.266666412353516px);
+            box-shadow: inset -1px 1px 1px 0 rgba(255, 255, 255, 0.4), inset 1px -1px 1px 0 rgba(214, 214, 214, 0.4);
+            background: rgba(255, 255, 255, 0.1);
+            a {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                align-items: center;
+                width: 57.77%;
+                
+            }
+            img {
+                width: 100%;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    &_bottom {
+        margin-top: 82px;
+        text-align: center;
+        color: #fff;
+    }
+}
