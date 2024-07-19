@@ -1,0 +1,123 @@
+.header {
+    &_top {
+        position: relative;
+        height: 36vw;
+        &_content {
+            position: absolute;
+            bottom: 1.56vw;
+            .title {
+                margin-top: 2.5vw;
+                color: #fff;
+                font-size: 2.5vw;
+            }
+        }
+        &_brochure {
+            position: absolute;
+            bottom: 2.55vw;
+            right: 0;
+            padding: 1.56vw 0.88vw;
+            width: 16.92vw;
+            border-radius: 15px;
+            backdrop-filter: blur(26.266666412353516px);
+            box-shadow: inset -1px 1px 1px 0 rgba(255, 255, 255, 0.4), inset 1px -1px 1px 0 rgba(214, 214, 214, 0.4);
+            background: rgba(255, 255, 255, 0.1);
+            img {
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+                right: 0.46vw;
+                width: 7vw;
+                cursor: pointer;
+            }
+            .title_20 {
+                font-size: 1.04vw;
+            }
+            .button {
+                margin-top: 0.62vw;
+                width: 8.85vw;
+                height: 1.66vw;
+                font-size: 1.04vw;
+            }
+        }
+    }
+    &_bg {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &_main {
+        position: fixed;
+        z-index: 5;
+        top: 1.45vw;
+        width: 100%;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            height: 4.8vw;
+        }
+    }
+    &_logo img {
+        height: 4.8vw;
+    }
+    &_buttons {
+        display: flex;
+        gap: 2.08vw;
+        img {
+            height: 1.3vw;
+        }
+    }
+    &_socials {
+        display: flex;
+        gap: 1.35vw;
+        & > div {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 3.38vw;
+            padding-top: 3.38vw;
+            border-radius: 0.78vw;
+            backdrop-filter: blur(26.266666412353516px);
+            box-shadow: inset -1px 1px 1px 0 rgba(255, 255, 255, 0.4), inset 1px -1px 1px 0 rgba(214, 214, 214, 0.4);
+            background: rgba(255, 255, 255, 0.1);
+            a {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                align-items: center;
+                width: 57.77%;
+            }
+            img {
+                width: 100%;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    &_bottom {
+        padding: 1.61vw 0 1.4vw;
+        background: #015019;
+    }
+    &_products {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_product {
+        img {
+            width: 9.21vw;
+            height: 9.21vw;
+            object-fit: cover;
+        }
+        .title {
+            margin-top: 0.73vw;
+            text-align: center;
+            font-size: 1.04vw;
+            color: #fff;
+        }
+    }
+}
