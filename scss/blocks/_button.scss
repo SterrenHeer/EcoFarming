@@ -5,8 +5,8 @@
     padding: 0.989vw;
     border: none;
     border-radius: 0.52vw;
-    background: #015019;
-    transition: all 0.2s ease-in-out;
+    background-color: #015019;
+    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	text-align: center;
     font-family: "CenturyGothic", sans-serif;
 	font-weight: 700;
@@ -15,7 +15,7 @@
     cursor: pointer;
     &:hover {
         box-shadow: 0 0 20px 4px rgba(#015019, 0.5);
-        background: rgba(#015019, 0.8);
+        background-color: rgba(#015019, 0.8);
     }
 	&_header {
         padding: 0.26vw;
@@ -24,6 +24,5 @@
         font-family: "Lato", sans-serif;
         font-weight: 600;
         font-size: 1.041vw;
-        text-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 	}
 }

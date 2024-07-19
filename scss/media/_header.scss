@@ -1,0 +1,80 @@
+@media (max-width: 992px) {
+	.header {
+        &_top {
+            height: 56.666vw;
+            &_content {
+                bottom: 2.777vw;
+                .title {
+                    margin-top: 0;
+                }
+            }
+            &_brochure {
+                bottom: 4.444vw;
+                right: auto;
+                padding: 3.333vw 8.333vw;
+                width: 79.166vw;
+                border-radius: 4.166vw;
+                img {
+                    right: 0;
+                    width: 25.55vw;
+                }
+                .title_20 {
+                    font-size: 3.88vw;
+                }
+                .button {
+                    margin-top: 2.777vw;
+                    width: 38.611vw;
+                    height: 7.5vw;
+                    font-size: 3.888vw;
+                }
+            }
+        }
+        &_main {
+            top: 3.888vw;
+            .container {
+                height: 13.333vw;
+            }
+        }
+        &_logo img {
+            height: 13.333vw;
+        }
+        &_buttons {
+            gap: 7.5vw;
+            img {
+                height: 6.944vw;
+            }
+        }
+        &_socials {
+            gap: 4.166vw;
+            & > div {
+                width: 8.333vw;
+                height: 8.333vw;
+                border-radius: 0.833vw;
+            }
+        }
+        &_bottom {
+            padding: 3.611vw 0 7.222vw;
+            .title_48 {
+                font-size: 6.666vw;
+            }
+        }
+        &_products {
+            flex-wrap: wrap;
+            gap: 3.055vw 0;
+            margin-top: 4.444vw;
+        }
+        &_product {
+            img {
+                width: 41.666vw;
+                height: 41.666vw;
+            }
+            .title {
+                margin-top: 1.388vw;
+                font-size: 3.888vw;
+            }
+        }
+        .full {
+            display: none;
+        }
+    }
+}
