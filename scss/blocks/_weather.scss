@@ -1,5 +1,6 @@
 .weather {
     &_wrapper {
+        position: relative;
         display: flex;
         justify-content: space-between;
         margin-top: 3.75vw;
@@ -104,6 +105,48 @@
         }
     }
     &_slider {
+        overflow: hidden;
         width: 39.3%;
+    }
+    &_controls {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        gap: 1.041vw;
+        img {
+            width: 2.083vw;
+        }
+    }
+    &_slide {
+        display: flex;
+        flex-direction: column;
+        gap: 1.718vw;
+        img {
+            height: 17.083vw;
+        }
+    }
+    &_field {
+        display: flex;
+    }
+    &_indicators {
+        margin-top: 1.197vw;
+        display: flex;
+        justify-content: center;
+        gap: 0.729vw;
+        list-style: none;
+    }
+    &_dot {
+        width: 18.14%;
+        height: 0.26vw;
+        border-radius: 5px;
+        background: rgba(214, 214, 214, 0.4);
+        cursor: pointer;
+    }
+    &_active {
+        background: #004705;
+    }
+    .rotate {
+        transform: rotate(180deg);
     }
 }
