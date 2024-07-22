@@ -1,0 +1,109 @@
+.weather {
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3.75vw;
+        padding-top: 3.75vw;
+    }
+    &_widget {
+        display: flex;
+        width: 55.18%;
+        &_top {
+            img {
+                width: 1.302vw;
+            }
+            .title_20 {
+                display: flex;
+                align-items: end;
+                gap: 0.364vw;
+                margin-top: 0.52vw;
+            }
+            .title_22 {
+                margin-top: 0.781vw;
+            }
+        }
+        &_bottom {
+            img {
+                width: 4.479vw;
+            }
+            .title_30 {
+                margin-top: 0.625vw;
+            }
+            .title_50 {
+                margin-top: 0.416vw;
+            }
+        }
+        .title {
+            color: #fff;
+        }
+    }
+    &_left {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2.291vw 1.51vw 4.01vw 1.51vw;
+        width: 48.64%;
+        height: calc(31.562vw - 2.291vw - 4.01vw);
+        
+    }
+    &_right {
+        position: relative;
+        padding: 3.591vw 2.291vw 4.01vw 2.604vw;
+        width: 51.35%;
+        height: calc(31.562vw - 3.591vw - 4.01vw);
+        .button {
+            margin-top: 3.385vw;
+            width: 100%;
+        }
+    }
+    &_bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+    }
+    &_parameter {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.781vw;
+    }
+    &_degrees {
+        display: flex;
+        margin-top: 1.927vw;
+        .active {
+            background: #fff;
+            img {
+                filter: brightness(0) saturate(100%)
+            }
+            .title {
+                color: #000;
+            }
+        }
+    }
+    &_degree {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.52vw;
+        width: 25%;
+        height: 7.916vw;
+        border-radius: 10px;
+        box-shadow: 1px 2px 4px 0 #222831;
+        background: #053a15;
+        img {
+            width: 2.552vw;
+        }
+        .title {
+            text-align: center;
+        }
+    }
+    &_slider {
+        width: 39.3%;
+    }
+}

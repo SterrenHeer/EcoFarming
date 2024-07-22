@@ -25,4 +25,20 @@
         font-weight: 600;
         font-size: 1.041vw;
 	}
+    &_city {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.781vw;
+        padding: 0.468vw;
+        border: 1px solid #fff;
+        background: linear-gradient(131deg, #fff 0%, rgba(255, 255, 255, 0.8) 100%);
+        font-weight: 600;
+        font-size: 1.041vw;
+        color: #015019;
+        img {
+            width: 1.145vw;
+            filter: brightness(0) saturate(100%) invert(19%) sepia(27%) saturate(4461%) hue-rotate(120deg) brightness(89%) contrast(99%);
+        }
+    }
 }
