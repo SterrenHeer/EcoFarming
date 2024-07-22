@@ -8,9 +8,19 @@
 	.button {
         padding: 3.888vw;
         font-size: 5.55vw;
+        border-radius: 2.777vw;
         &_header {
             padding: 1.388vw;
             font-size: 3.888vw;
+        }
+        &_city {
+            justify-content: space-between;
+            gap: 0;
+            padding: 2.5vw 11.944vw 2.5vw 3.611vw;
+            font-size: 5.555vw;
+            img {
+                width: 8.333vw;
+            }
         }
 	}
 }

@@ -1,0 +1,108 @@
+@media (max-width:1440px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+	.weather {
+        margin-top: 21.944vw;
+        &_wrapper {
+            flex-direction: column;
+            gap: 23.333vw;
+            padding-top: 0;
+        }
+        &_widget {
+            flex-direction: column;
+            gap: 0;
+            width: 100%;
+            &_top {
+                img {
+                    width: 6.944vw;
+                }
+                .title_20 {
+                    display: flex;
+                    align-items: end;
+                    gap: 1.944vw;
+                    margin-top: 1.944vw;
+                }
+                .title_22 {
+                    margin-top: 4.722vw;
+                }
+            }
+            &_bottom {
+                img {
+                    display: block;
+                    width: 18.333vw;
+                    margin-left: auto;
+                }
+                .title_30 {
+                    margin-top: 5vw;
+                }
+                .title_50 {
+                    margin-top: -2.5vw;
+                }
+            }
+        }
+        &_left {
+            padding: 7.5vw 5.277vw 7.222vw;
+            width: calc(100% - 5.277vw - 5.277vw);
+            height: calc(80vw - 7.5vw - 7.222vw);
+            
+        }
+        &_right {
+            padding: 7.222vw 6.388vw 9.166vw 7.777vw;
+            width: calc(100% - 6.388vw - 7.777vw);
+            height: calc(111.111vw - 7.222vw - 7.777vw);
+            .button {
+                margin-top: 5.555vw;
+            }
+        }
+        &_bg {
+            border-radius: 8.333vw;
+        }
+        &_parameter {
+            margin-top: 5.555vw;
+        }
+        &_degrees {
+            margin-top: 6.388vw;
+        }
+        &_degree {
+            gap: 3.888vw;
+            height: 30.277vw;
+            border-radius: 2.777vw;
+            img {
+                width: 9.166vw;
+            }
+        }
+        &_slider {
+            width:100%;
+        }
+        &_controls {
+            display: none;
+        }
+        &_slide {
+            gap: 5.555vw;
+            img {
+                height: 43.333vw;
+            }
+        }
+        &_indicators {
+            margin-top: 4.444vw;
+            gap: 0;
+            border-radius: 1.388vw;
+            background: rgba(214, 214, 214, 0.4);
+        }
+        &_dot {
+            width: auto;
+            height: 2.222vw;
+            border-radius: 1.388vw;
+        }
+    }
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 480px) {
+
+}

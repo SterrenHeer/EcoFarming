@@ -1,9 +1,9 @@
 .weather {
+    margin-top: 3.75vw;
     &_wrapper {
         position: relative;
         display: flex;
         justify-content: space-between;
-        margin-top: 3.75vw;
         padding-top: 3.75vw;
     }
     &_widget {
@@ -44,14 +44,14 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 2.291vw 1.51vw 4.01vw 1.51vw;
-        width: 48.64%;
+        width: calc(48.64% - 1.51vw - 1.51vw);
         height: calc(31.562vw - 2.291vw - 4.01vw);
         
     }
     &_right {
         position: relative;
         padding: 3.591vw 2.291vw 4.01vw 2.604vw;
-        width: 51.35%;
+        width: calc(51.35% - 2.291vw - 2.604vw);
         height: calc(31.562vw - 3.591vw - 4.01vw);
         .button {
             margin-top: 3.385vw;
@@ -65,7 +65,7 @@
         z-index: -1;
         width: 100%;
         height: 100%;
-        border-radius: 30px;
+        border-radius: 1.562vw;
         object-fit: cover;
     }
     &_parameter {
@@ -94,7 +94,7 @@
         gap: 0.52vw;
         width: 25%;
         height: 7.916vw;
-        border-radius: 10px;
+        border-radius: 0.52vw;
         box-shadow: 1px 2px 4px 0 #222831;
         background: #053a15;
         img {
@@ -123,6 +123,7 @@
         flex-direction: column;
         gap: 1.718vw;
         img {
+            width: 100%;
             height: 17.083vw;
         }
     }
@@ -134,12 +135,11 @@
         display: flex;
         justify-content: center;
         gap: 0.729vw;
-        list-style: none;
     }
     &_dot {
         width: 18.14%;
         height: 0.26vw;
-        border-radius: 5px;
+        border-radius: 0.26vw;
         background: rgba(214, 214, 214, 0.4);
         cursor: pointer;
     }

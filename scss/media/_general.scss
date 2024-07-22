@@ -1,6 +1,7 @@
 @import 'title';
 @import 'button';
 @import 'header';
+@import 'weather';
 @import 'footer';
 
 .hide {
@@ -11,6 +12,10 @@
 }
 .flex {
 	display: flex;
+}
+
+.nomt {
+	margin-top: 0
 }
 
 .trans-5 {
