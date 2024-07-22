@@ -13,6 +13,10 @@
 .flex {
 	display: flex;
 }
+.blur {
+	backdrop-filter: blur(26px);
+	background-color: rgba(136, 176, 82, 0.3);
+}
 
 .nomt {
 	margin-top: 0

@@ -54,6 +54,8 @@
         .container {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            border-radius: 0.52vw;
             height: 4.8vw;
         }
     }
@@ -119,5 +121,108 @@
             font-size: 1.04vw;
             color: #fff;
         }
+    }
+}
+.burger {
+    display: none;
+    position: fixed;
+    z-index: 14;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    &_modal {
+        position: absolute;
+        top: 5vh;
+        left: 50%;
+        transform: translate(-50%, 0);
+        overflow-y: auto;
+        padding: 1.197vw 1.666vw;
+        width: calc(55.208vw - 1.666vw - 1.666vw);
+        max-height: calc(90vh - 1.197vw - 1.197vw);
+        background: #fff;
+        &::-webkit-scrollbar {
+            width: 0.312vw;
+            background-color: #fff;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 0.26vw;
+            background: #015019;
+        }
+        &::-webkit-scrollbar-track {
+            border-radius: 0.26vw;
+            background: #fff;
+        }
+    }
+    &_buttons {
+        position: absolute;
+        top: 1.197vw;
+        right: 1.197vw;
+        z-index: 5;
+        display: flex;
+        gap: 1.302vw;
+        img {
+            width: 1.302vw;
+            height: 1.302vw;
+            filter: brightness(0) saturate(100%);
+            cursor: pointer;
+        }
+    }
+    &_menu {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.875vw;
+        & > li, ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1.145vw;
+        }
+        ul {
+            gap: 0.781vw;
+        }
+        li {
+            list-style: none;
+        }
+    }
+    &_search {
+        width: 76%;
+        border: none;
+        font-weight: 400;
+        font-size: 1.25vw;
+        color: #757575;
+        outline: none;
+        &::placeholder {
+            font-weight: 400;
+            font-size: 1.25vw;
+            color: #757575;
+        }
+    }
+}
+.burger.show {
+    animation: fadeIn 0.8s;
+}
+.burger:not(.show) {
+    animation: fadeOut 1.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        top: -90vw;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    from {
+        top: 0;
+        display: block;
+        opacity: 1;
+    }
+    to {
+        top: -90vw;
+        display: none;
+        opacity: 0;
     }
 }
