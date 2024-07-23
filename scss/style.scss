@@ -17,11 +17,47 @@ a {
 	display: none;
 }
 
+.pagination {
+	display: flex;
+	justify-content: center;
+	gap: 1.041vw;
+	margin-top: 4.375vw;
+	&_item, &_next, &_prev {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 3.229vw;
+		height: 3.229vw;
+		border: 1px solid #015019;
+		border-radius: 0.312vw;
+		font-family: 'Inter', sans-serif;
+		font-weight: 800;
+		font-size: 0.937vw;
+		color: #015019;
+		cursor: pointer;
+		user-select: none;
+	}
+	.active {
+		background: #015019;
+		color: #fff;
+	}
+	&_next, &_prev {
+		border: 1px solid #bcbcbc;
+	}
+	.rotate {
+		img {
+			transform: rotate(180deg);
+			filter: brightness(0) saturate(100%) invert(70%) sepia(0%) saturate(446%) hue-rotate(180deg) brightness(111%) contrast(86%);
+		}
+	}
+}
+
 @import 'blocks/title';
 @import 'blocks/button';
 @import 'blocks/header';
 @import 'blocks/weather';
 @import 'blocks/videos';
 @import 'blocks/categories';
+@import 'blocks/product_brands';
 @import 'blocks/footer';
 @import 'media/general';

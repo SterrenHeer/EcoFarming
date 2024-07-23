@@ -83,15 +83,16 @@
             display: none;
         }
         .others {
-            gap: 5.555vw;
+            flex-wrap: wrap;
+            gap: 2.777vw 5.555vw;
             .title {
                 font-size: 3.333vw;
             }
             .active {
                 &::after {
                     left: -0.555vw;
+                    bottom: -1.222vw;
                     width: calc(100% + 0.555vw + 0.555vw);
-                    margin-top: 2.222vw;
                     height: 0.833vw;
                     border-radius: 1.388vw;
                 }

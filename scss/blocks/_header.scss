@@ -126,7 +126,7 @@
             color: #fff;
         }
     }
-    .others {
+    .others, .products {
         display: flex;
         gap: 3.385vw;
         .title {
@@ -136,15 +136,18 @@
             &::after {
                 position: relative;
                 left: -0.677vw;
+                bottom: -0.42vw;
                 content: '';
                 display:block;
                 width: calc(100% + 0.677vw + 0.677vw);
-                margin-top: 0.42vw;
                 height: 0.156vw;
                 border-radius: 0.26vw;
                 background: #fff;
             }
         }
+    }
+    .products {
+        gap: 1.562vw;
     }
 }
 .burger {

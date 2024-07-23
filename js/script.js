@@ -7,8 +7,14 @@ $.get('header.html',function(response){
         modal('.burger_button', 'data-close', '.burger');
     }
     if (location.pathname.includes('index')) {
-		document.querySelector('.others').style.display = 'none';
+		document.querySelector('.others.products').style.display = 'none';
+		document.querySelector('.others.all').style.display = 'none';
+    } else if (location.pathname.includes('products') || location.pathname.includes('cultures') || location.pathname.includes('harmful')) {
+        document.querySelector('.others.products').style.display = 'none';
+        document.querySelector('.main').style.display = 'none';
+
     } else {
+        document.querySelector('.others.all').style.display = 'none';
         document.querySelector('.main').style.display = 'none';
     }
 });
