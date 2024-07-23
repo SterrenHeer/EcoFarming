@@ -17,5 +17,15 @@
                 height: 7.777vw;
             }
         }
+        &_item.other {
+            .title {
+                border-radius: 2.777vw;
+            }
+        }
+        &_item.white {
+            img {
+                height: 41.666vw;
+            }
+        }
     }    
 }
