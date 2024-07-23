@@ -1,0 +1,105 @@
+.brand {
+    padding-top: 2.708vw;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_others {
+        width: 23.67%;
+        .title_32 {
+            color: #015019;
+        }
+    }
+    &_items {
+        display: flex;
+        flex-direction: column;
+        gap: 1.302vw;
+        padding-left: 2.291vw;
+        margin-top: 1.614vw;
+    }
+    &_descr {
+        width: 74%;
+        .title_24.regular {
+            margin-top: 2.083vw;
+            width: 38.666vw;
+        }
+    }
+    &_title {
+        display: flex;
+        align-items: end;
+        gap: 1.822vw;
+    }
+    &_headers {
+        display: flex;
+        gap: 4.218vw;
+        margin-top: 4.218vw;
+        .title {
+            cursor: pointer;
+        }
+    }
+    &_tab {
+        margin-top: 1.822vw;
+        &_active {
+            &::after {
+                position: relative;
+                bottom: -0.52vw;
+                content: '';
+                display:block;
+                width: 100%;
+                height: 0.156vw;
+                border-radius: 0.26vw;
+                background: #a15a96;
+            }
+        }
+    }
+    &_params {
+        display: flex;
+        gap: 2.864vw;
+        &_row {
+            display: flex;
+            align-items: start;
+            gap: 2.343vw;
+            width: 27.135vw;
+            img {
+                width: 4.01vw;
+            }
+        }
+        &_column {
+            display: flex;
+            flex-direction: column;
+            gap: 2.083vw;
+        }
+        &_item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.26vw;
+            .title_20 {
+                color: #a15a96;
+            }
+        }
+        &_bottom {
+            margin-top: 3.125vw;
+            .divider {
+                margin-top: 0;
+                margin-bottom: 1.302vw;
+            }
+        }
+    }
+    &_advantages {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.083vw 3.489vw;
+        margin-top: 1.822vw;
+        li {
+            margin-left: 1.507vw;
+            width: 21.01vw;
+        }
+    }
+    .divider {
+        width: 100%;
+        height: 0.156vw;
+        margin-top: 1.822vw;
+        border-radius: 0.26vw;
+        background: #757575;
+    }
+}

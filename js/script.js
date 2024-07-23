@@ -27,14 +27,19 @@ window.onscroll = function() {
     window.scrollY > 200 ? header.classList.add('blur') : header.classList.remove('blur');
 }
 
-if (document.querySelector('.weather_slider') != null)
-slider({
-    containerSelector: '.weather_slider',
-    slideSelector: '.weather_slide',
-    nextSlideSelector: '.weather_next',
-    prevSlideSelector: '.weather_prev',
-    wrapperSelector: '.weather_slider',
-    fieldSelector: '.weather_field',
-    indicatorsClass: 'weather_indicators',
-    swipe: true,
-});
+if (document.querySelector('.weather_slider') != null) {
+    slider({
+        containerSelector: '.weather_slider',
+        slideSelector: '.weather_slide',
+        nextSlideSelector: '.weather_next',
+        prevSlideSelector: '.weather_prev',
+        wrapperSelector: '.weather_slider',
+        fieldSelector: '.weather_field',
+        indicatorsClass: 'weather_indicators',
+        swipe: true,
+    });
+}
+
+if (document.querySelector('.brand_tab') != null) {
+    tabs('.brand_header', '.brand_tab', '.brand_headers', 'brand_tab_active');
+}
