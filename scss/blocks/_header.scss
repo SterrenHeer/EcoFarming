@@ -30,6 +30,7 @@
             }
             .title_20 {
                 font-size: 1.04vw;
+                color: #fff;
             }
             .button {
                 margin-top: 0.62vw;
@@ -196,6 +197,9 @@
             font-size: 1.25vw;
             color: #757575;
         }
+    }
+    &_bottom {
+        display: none;
     }
 }
 .burger.show {
