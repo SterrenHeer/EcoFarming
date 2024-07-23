@@ -119,6 +119,16 @@
             }
         }
     }
+    &_images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.302vw 2%;
+        img {
+            width: 23.45%;
+            height: 15.052vw;
+            object-fit: cover;
+        }
+    }
     &_advantages {
         display: flex;
         flex-wrap: wrap;
@@ -127,6 +137,12 @@
         li {
             margin-left: 1.507vw;
             width: 21.01vw;
+        }
+    }
+    .images {
+        .title_24 {
+            width: 100%;
+            margin-top: 3.593vw;
         }
     }
     .divider {
