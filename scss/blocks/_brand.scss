@@ -85,6 +85,40 @@
             }
         }
     }
+    &_table {
+        display: flex;
+        &_column {
+            position: relative;
+            flex: 1;
+            .title {
+                display: flex;
+                align-items: center;
+            }
+            .title_20 {
+                padding: 1.25vw 0.781vw;
+                height: calc(3.75vw - 1.25vw - 1.25vw);
+                &:nth-child(odd) {
+                    background: rgba(161, 90, 150, 0.38);
+                }
+            }
+            .title_24 {
+                height: 7.708vw;
+                background: #a15a96;
+                color: #fff;
+            }
+            .title_32 {
+                position: absolute;
+                top: 1.406vw;
+                color: #fff;
+            }
+            .left {
+                padding-left: 2.916vw;
+            }
+            .top span {
+                padding-top: 2.968vw;
+            }
+        }
+    }
     &_advantages {
         display: flex;
         flex-wrap: wrap;

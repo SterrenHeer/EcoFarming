@@ -17,15 +17,14 @@ $.get('header.html',function(response){
         document.querySelector('.others.all').style.display = 'none';
         document.querySelector('.main').style.display = 'none';
     }
+    window.onscroll = function() {
+        let header = document.querySelector(".header_main .container");
+        window.scrollY > 200 ? header.classList.add('blur') : header.classList.remove('blur');
+    }
 });
 $.get('footer.html',function(response){ 
     $('.footer').html(response); 
 });
-
-window.onscroll = function() {
-    let header = document.querySelector(".header_main .container");
-    window.scrollY > 200 ? header.classList.add('blur') : header.classList.remove('blur');
-}
 
 if (document.querySelector('.weather_slider') != null) {
     slider({
