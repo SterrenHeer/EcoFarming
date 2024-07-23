@@ -1,0 +1,38 @@
+.categories {
+    padding-top: 2.291vw;
+    &_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3.229vw 3.846%;
+        margin-top: 2.656vw;
+    }
+    &_item {
+        overflow: hidden;
+        position: relative;
+        width: 30.76%;
+        height: 24.739vw;
+        border-radius: 0.52vw;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 20.104vw;
+            border-radius: 0.52vw;
+            object-fit: cover;
+            &:hover {
+                filter: saturate(180%);
+            }
+        }
+        .title {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 4.635vw;
+            color: #fff;
+        }
+    }
+}

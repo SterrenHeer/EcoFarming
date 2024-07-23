@@ -1,0 +1,21 @@
+@media (max-width: 992px) {
+	.categories {
+        padding-top: 5.555vw;
+        &_wrapper {
+            gap: 3.333vw;
+            margin-top: 5.555vw;
+        }
+        &_item {
+            width: 48.07%;
+            height: 41.666vw;
+            border-radius: 2.777vw;
+            img {
+                height: 33.888vw;
+                border-radius: 2.777vw;
+            }
+            .title {
+                height: 7.777vw;
+            }
+        }
+    }    
+}

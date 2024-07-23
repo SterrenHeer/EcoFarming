@@ -115,12 +115,35 @@
             width: 9.21vw;
             height: 9.21vw;
             object-fit: cover;
+            &:hover {
+                filter: contrast(150%);
+            }
         }
         .title {
             margin-top: 0.73vw;
             text-align: center;
             font-size: 1.04vw;
             color: #fff;
+        }
+    }
+    .others {
+        display: flex;
+        gap: 3.385vw;
+        .title {
+            color: #fff;
+        }
+        .active {
+            &::after {
+                position: relative;
+                left: -0.677vw;
+                content: '';
+                display:block;
+                width: calc(100% + 0.677vw + 0.677vw);
+                margin-top: 0.42vw;
+                height: 0.156vw;
+                border-radius: 0.26vw;
+                background: #fff;
+            }
         }
     }
 }
@@ -183,6 +206,10 @@
         }
         li {
             list-style: none;
+            a:hover {
+                color: #7BA254;
+                text-decoration: underline;
+            }
         }
     }
     &_search {

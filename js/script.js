@@ -6,6 +6,11 @@ $.get('header.html',function(response){
     if (document.querySelector('.burger') != null) {
         modal('.burger_button', 'data-close', '.burger');
     }
+    if (location.pathname.includes('index')) {
+		document.querySelector('.others').style.display = 'none';
+    } else {
+        document.querySelector('.main').style.display = 'none';
+    }
 });
 $.get('footer.html',function(response){ 
     $('.footer').html(response); 

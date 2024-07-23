@@ -12,6 +12,9 @@
             width: 100%;
             height: 19.645vw;
             cursor: pointer;
+            &:hover {
+                filter: saturate(200%);
+            }
         }
         .bg {
             width: 100%;
