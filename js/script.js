@@ -26,6 +26,13 @@ $.get('footer.html',function(response){
     $('.footer').html(response); 
 });
 
+$('.brand_others img').click(() => {
+    $('.brand_items, .brand_items a').toggleClass('flex');
+});
+$(window).on( "resize, scroll", () => {
+    $('.brand_items').removeClass("flex")
+});
+
 if (document.querySelector('.weather_slider') != null) {
     slider({
         containerSelector: '.weather_slider',

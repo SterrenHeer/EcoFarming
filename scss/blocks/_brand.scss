@@ -9,6 +9,9 @@
         .title_32 {
             color: #015019;
         }
+        img {
+            display: none;
+        }
     }
     &_items {
         display: flex;
@@ -18,6 +21,7 @@
         margin-top: 1.614vw;
     }
     &_descr {
+        padding-top: 2.968vw;
         width: 74%;
         .title_24.regular {
             margin-top: 2.083vw;
@@ -28,6 +32,10 @@
         display: flex;
         align-items: end;
         gap: 1.822vw;
+        img {
+            width: 3.541vw;
+            height: 3.541vw;
+        }
     }
     &_headers {
         display: flex;
@@ -104,11 +112,13 @@
             .title_24 {
                 height: 7.708vw;
                 background: #a15a96;
+                text-wrap: nowrap;
                 color: #fff;
             }
             .title_32 {
                 position: absolute;
                 top: 1.406vw;
+                text-wrap: nowrap;
                 color: #fff;
             }
             .left {
