@@ -29,7 +29,7 @@
             background: #fff;
             box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
         }
-        &_catalog {
+        &_catalog, &_descr {
             width: 100%;
         }
         &_search {
@@ -60,6 +60,50 @@
                 height: 40vw;
                 border-radius: 4.166vw;
             }
+        }
+        &_descr {
+            &_wrapper {
+                flex-direction: column;
+                gap: 16.666vw;
+                margin-top: 5.277vw;
+            }
+            &_images {
+                width: 100%;
+                &_bottom {
+                    margin-top: 4.166vw;
+                }
+                .main_image {
+                    max-height: 68.611vw;
+                }
+            }
+            &_content {
+                gap: 4.166vw;
+                width: 100%;
+            }
+            &_params {
+                flex-wrap: wrap;
+                justify-content: start;
+                gap: 5.833vw 12.5vw;
+            }
+            &_param, &_prop {
+                gap: 1.388vw;
+            }
+            .title_20 {
+                font-size: 4.444vw;
+            }
+            .title_24 {
+                font-size: 5.555vw;
+            }
+            .title_48 {
+                margin-bottom: 2.777vw;
+                font-size: 6.666vw;
+            }
+        }
+        &_slider {
+            width: 70.833%;
+        }
+        &_next, &_prev {
+            width: 13.14%;
         }
         .pagination {
             width: auto;

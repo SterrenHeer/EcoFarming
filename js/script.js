@@ -60,9 +60,7 @@ if (document.querySelector('.weeds_slider') != null) {
         columnGap: 0.937,
         swipe: true,
     });
-}
 
-if (document.querySelector('.weeds_slider') != null) {
     let bottom_images = document.querySelectorAll('.weeds_slide img');
 
     bottom_images.forEach(image => {
