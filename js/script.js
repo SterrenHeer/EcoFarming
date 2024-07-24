@@ -1,6 +1,6 @@
 $.get('header.html',function(response){ 
     $('.header').html(response); 
-    $('.burger_button, .burger_close, .burger a').click(() => {
+    $('.header_buttons img, .burger_close, .burger a').click(() => {
         $('.burger').toggleClass('show');
     });
     if (document.querySelector('.burger') != null) {

@@ -1,0 +1,98 @@
+.contacts {
+    padding-top: 2.291vw;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_map {
+        width: 65.86%;
+        height: 43.541vw;
+    }
+    &_content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.781vw;
+        width: 30.26%;
+        .title.medium {
+            color: rgba(0, 0, 0, 0.52);
+        }
+        .row {
+            display: flex;
+            gap: 4.01vw;
+        }
+    }
+    &_item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.385vw;
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 0.285vw;
+        }
+    }
+    &_info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.666vw;
+        margin-top: 2.291vw;
+        width: 49.27vw;
+    }
+    &_questions {
+        position: relative;
+        padding: 2.864vw 3.645vw;
+        margin-top: 1.719vw;
+        height: 25.989vw;
+        border-radius: 0.52vw;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+        background: #fff;
+        img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 32.187vw;
+        }
+        .title_24 {
+            margin: 0 auto;
+            width: 46.427vw;
+            text-align: center;
+        }
+    }
+    &_form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.041vw;
+        margin-top: 2.76vw;
+        width: 42.83%;
+        &_input, textarea {
+            padding: 0.729vw 1.77vw;
+            width: calc(100% - 1.77vw - 1.77vw);
+            border: 1px solid #757575;
+            border-radius: 0.26vw;
+            font-weight: 400;
+            font-size: 0.833vw;
+            color: rgba(0, 0, 0, 0.6);
+            outline: none;
+            &::placeholder {
+                font-weight: 400;
+                font-size: 0.833vw;
+                color: rgba(0, 0, 0, 0.6);
+            }
+        }
+        .doubles {
+            display: flex;
+            justify-content: space-between;
+            input {
+                width: calc(48.5% - 1.77vw - 1.77vw);
+            }
+        }
+        .button {
+            margin-top: 4px;
+            width: 17.916vw;
+        }
+    }
+    .title_32 {
+        margin-top: 4.062vw;
+        text-align: center;
+    }
+}
