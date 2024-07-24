@@ -105,6 +105,39 @@
         &_next, &_prev {
             width: 13.14%;
         }
+        &_medication {
+            margin-top: 9.166vw;
+            &_wrapper {
+                gap: 2.777vw;
+                margin-top: 10.277vw;
+            }
+            &_item {
+                gap: 3.333vw;
+                img {
+                    width: 19.166vw;
+                    height: 19.166vw;
+                }
+            }
+            &_content {
+                gap: 1.666vw;
+                width: 100%;
+                .title {
+                    font-size: 2.777vw;
+                }
+                .title_20 {
+                    font-size: 3.333vw;
+                }
+                .title_32 {
+                    font-size: 4.444vw;
+                }
+            }
+            .head {
+                padding: 3.888vw 2.5vw;
+            }
+            .pagination {
+                display: flex;
+            }
+        }
         .pagination {
             width: auto;
         }

@@ -148,6 +148,47 @@
     &_field {
         display: flex;
     }
+    &_medication {
+        margin-top: 7.5vw;
+        &_wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2.083vw;
+            margin-top: 2.083vw;
+        }
+        &_item {
+            display: flex;
+            gap: 2.604vw;
+            cursor: pointer;
+            img {
+                width: 5.989vw;
+                height: 5.989vw;
+            }
+        }
+        &_content {
+            display: flex;
+            flex-direction: column;
+            gap: 0.625vw;
+            width: 36.77vw;
+            .title {
+                color: #757575;
+            }
+            .title_20 {
+                color: #000;
+            }
+            .title_32 {
+                color: #015019;
+            }
+        }
+        .head {
+            padding: 0.625vw 0.937vw;
+            background: #015019;
+            color: #fff;
+        }
+        .pagination {
+            display: none;
+        }
+    }
     .pagination {
         width: 90.42%;
     }
