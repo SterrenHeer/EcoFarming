@@ -32,6 +32,7 @@ $('.weeds_others img, weeds_links a').click(() => {
 });
 $(window).on( "resize, scroll", () => {
     $('.brand_items').removeClass("flex")
+    $('.weeds_links').removeClass("flex")
 });
 
 if (document.querySelector('.weather_slider') != null) {
@@ -45,6 +46,31 @@ if (document.querySelector('.weather_slider') != null) {
         indicatorsClass: 'weather_indicators',
         swipe: true,
     });
+}
+if (document.querySelector('.weeds_slider') != null) {
+    slider({
+        containerSelector: '.weeds_descr_images_bottom',
+        slideSelector: '.weeds_slide',
+        nextSlideSelector: '.weeds_next',
+        prevSlideSelector: '.weeds_prev',
+        wrapperSelector: '.weeds_slider',
+        fieldSelector: '.weeds_field',
+        elementsPerPage: 2, 
+        elementsPerPageMobile: 2,
+        columnGap: 0.937,
+        swipe: true,
+    });
+}
+
+if (document.querySelector('.weeds_slider') != null) {
+    let bottom_images = document.querySelectorAll('.weeds_slide img');
+
+    bottom_images.forEach(image => {
+        image.addEventListener('click', (e) => {
+            let main_image = document.querySelector('.main_image');
+            main_image.setAttribute('src', image.getAttribute('src'))
+        });
+    }); 
 }
 
 if (document.querySelector('.brand_tab') != null) {

@@ -38,7 +38,7 @@ function slider({containerSelector, slideSelector, nextSlideSelector, prevSlideS
 	let width = Math.floor(deleteNotDigits(window.getComputedStyle(wrapper).width) / perPage - (gap * (slides.length - 1) / slides.length)) + 'px';
 
     field.style.width = 100 * (slides.length + perPage - 1) / perPage + "%";
-    field.style.columnGap = gap + "px";
+    field.style.columnGap = gap + "vw";
 
     slides.forEach((slide, index) => {
 		slide.style.width = width;
@@ -87,7 +87,7 @@ function slider({containerSelector, slideSelector, nextSlideSelector, prevSlideS
         perPage == 1 ? gap = 0 : gap = gap;
         width = Math.floor(deleteNotDigits(window.getComputedStyle(wrapper).width) / perPage - (gap * (slides.length - 1) / slides.length)) + 'px';
         field.style.width = 100 * (slides.length + perPage - 1) / perPage + "%";
-        field.style.columnGap = gap + "px";
+        field.style.columnGap = gap + "vw";
 
         while (field.childElementCount > baseSlides.length) {
             field.removeChild(field.lastElementChild)
@@ -142,6 +142,10 @@ function slider({containerSelector, slideSelector, nextSlideSelector, prevSlideS
 		} else {
 			slideIndex++;
 		}
+        if (containerSelector.includes('weeds')) {
+            let main_image = document.querySelector('.main_image');
+            main_image.setAttribute('src', slides[slideIndex - 1].querySelector('img').getAttribute('src'))
+        }
 		changeActivity();
     }
 
@@ -159,6 +163,10 @@ function slider({containerSelector, slideSelector, nextSlideSelector, prevSlideS
 		} else {
 			slideIndex--;
 		}
+        if (containerSelector.includes('weeds')) {
+            let main_image = document.querySelector('.main_image');
+            main_image.setAttribute('src', slides[slideIndex - 1].querySelector('img').getAttribute('src'))
+        }
 		changeActivity();
     }
 
