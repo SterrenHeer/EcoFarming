@@ -98,7 +98,7 @@
         }
     }
     &_bottom {
-        padding: 1.61vw 0 1.4vw;
+        padding: 1.61vw 0;
         background: #015019;
         .title_48 {
             text-align: center;
@@ -148,6 +148,11 @@
     }
     .products {
         gap: 1.562vw;
+    }
+    &_bottom {
+        .container {
+            display: none;
+        }
     }
 }
 .burger {

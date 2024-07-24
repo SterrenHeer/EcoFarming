@@ -7,15 +7,13 @@ $.get('header.html',function(response){
         modal('.burger_button', 'data-close', '.burger');
     }
     if (location.pathname.includes('index')) {
-		document.querySelector('.others.products').style.display = 'none';
-		document.querySelector('.others.all').style.display = 'none';
+		document.querySelector('.main').style.display = 'block';
     } else if (location.pathname.includes('products') || location.pathname.includes('cultures') || location.pathname.includes('harmful')) {
-        document.querySelector('.others.products').style.display = 'none';
-        document.querySelector('.main').style.display = 'none';
-
-    } else {
-        document.querySelector('.others.all').style.display = 'none';
-        document.querySelector('.main').style.display = 'none';
+        document.querySelector('.others.all').style.display = 'flex';
+    } else if (location.pathname.includes('weed')) {
+        document.querySelector('.others.harmful').style.display = 'flex';
+    }else {
+        document.querySelector('.others.products').style.display = 'flex';
     }
     window.onscroll = function() {
         let header = document.querySelector(".header_main .container");
@@ -26,8 +24,11 @@ $.get('footer.html',function(response){
     $('.footer').html(response); 
 });
 
-$('.brand_others img').click(() => {
-    $('.brand_items, .brand_items a').toggleClass('flex');
+$('.brand_others img, .brand_items a').click(() => {
+    $('.brand_items').toggleClass('flex');
+});
+$('.weeds_others img, weeds_links a').click(() => {
+    $('.weeds_links').toggleClass('flex');
 });
 $(window).on( "resize, scroll", () => {
     $('.brand_items').removeClass("flex")
