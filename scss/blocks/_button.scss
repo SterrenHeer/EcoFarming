@@ -41,4 +41,12 @@
             filter: brightness(0) saturate(100%) invert(19%) sepia(27%) saturate(4461%) hue-rotate(120deg) brightness(89%) contrast(99%);
         }
     }
+    &_back {
+        padding: 0.416vw;
+        border: 1px solid #015019;
+        background: none;
+        font-weight: 500;
+        font-size: 1.041vw;
+        color: #000;
+    }
 }
