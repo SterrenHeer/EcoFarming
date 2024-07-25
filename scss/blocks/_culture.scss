@@ -1,0 +1,65 @@
+.culture {
+    padding-top: 2.291vw;
+    &_wrapper {
+        width: 65.3%;
+    }
+    &_icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1.145vw;
+        width: calc(11.458vw - 1.145vw - 1.145vw);
+        height: calc(11.458vw - 1.145vw - 1.145vw);
+        border-radius: 0.52vw;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+        background: #fff;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &_items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.145vw;
+        margin-top: 2.395vw;
+    }
+    &_item {
+        position: relative;
+        width: 23.48%;
+        height: 12.291vw;
+        border-radius: 0.52vw;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 0.52vw;
+            &:hover {
+                filter: saturate(180%);
+            }
+        }
+        .title {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 2.291vw;
+            border-radius: 0.52vw;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            background: #015019;
+            color: #fff;
+        }
+    }
+    &_text {
+        margin-top: 4.062vw;
+        ul {
+            margin: 1.718vw 0 0 1.518vw;
+        }
+    }
+    .container {
+        position: relative;
+    }
+}
