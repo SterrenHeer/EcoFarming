@@ -76,6 +76,17 @@ if (document.querySelector('.weeds_slider') != null) {
     }); 
 }
 
+if (document.querySelector('.publications_slider') != null) {
+    slider({
+        containerSelector: '.publications_wrapper',
+        slideSelector: '.publications_slide',
+        wrapperSelector: '.publications_slider',
+        fieldSelector: '.publications_field',
+        indicatorsClass: 'publications_indicators',
+        swipe: true,
+    });
+}
+
 if (document.querySelector('.brand_tab') != null) {
     tabs('.brand_header', '.brand_tab', '.brand_headers', 'brand_tab_active');
 }
