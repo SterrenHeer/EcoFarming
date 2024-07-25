@@ -37,6 +37,9 @@ a {
 		cursor: pointer;
 		user-select: none;
 	}
+	img {
+		height: 0.625vw;
+	}
 	.active {
 		background: #015019;
 		color: #fff;
@@ -62,5 +65,6 @@ a {
 @import 'blocks/brand';
 @import 'blocks/weeds';
 @import 'blocks/contacts';
+@import 'blocks/publications';
 @import 'blocks/footer';
 @import 'media/general';

@@ -12,7 +12,9 @@ $.get('header.html',function(response){
         document.querySelector('.others.all').style.display = 'flex';
     } else if (location.pathname.includes('weed')) {
         document.querySelector('.others.harmful').style.display = 'flex';
-    }else {
+    } else if (location.pathname.includes('contacts') || location.pathname.includes('publication')) {
+        document.querySelector('.others.company').style.display = 'flex';
+    } else {
         document.querySelector('.others.products').style.display = 'flex';
     }
     window.onscroll = function() {
@@ -27,8 +29,11 @@ $.get('footer.html',function(response){
 $('.brand_others img, .brand_items a').click(() => {
     $('.brand_items').toggleClass('flex');
 });
-$('.weeds_others img, weeds_links a').click(() => {
+$('.weeds_others img, .weeds_links a').click(() => {
     $('.weeds_links').toggleClass('flex');
+});
+$('.publications_others img, .publications_links a').click(() => {
+    $('.publications_links').toggleClass('flex');
 });
 $(window).on( "resize, scroll", () => {
     $('.brand_items').removeClass("flex")

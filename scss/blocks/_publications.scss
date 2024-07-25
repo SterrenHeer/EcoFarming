@@ -1,0 +1,90 @@
+.publications {
+    padding-top: 2.291vw;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2.447vw;
+    }
+    &_others {
+        width: 24.3%;
+        .title_32 {
+            display: flex;
+            gap: 3.611vw;
+            color: #015019;
+        }
+        img {
+            display: none;
+        }
+    }
+    &_links {
+        display: flex;
+        flex-direction: column;
+        gap: 2.083vw;
+        margin-top: 2.083vw;
+        a:hover {
+            color: #7BA254;
+            text-decoration: underline;
+        }
+    }
+    &_list {
+        width: 74%;
+    }
+    &_items {
+        display: flex;
+        flex-direction: column;
+        gap: 2.604vw;
+    }
+    &_item {
+        &_wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.614vw;
+        }
+        &_image {
+            position: relative;
+            width: 41.47%;
+            height: 15vw;
+            cursor: pointer;
+            .bg {
+                width: 100%;
+                height: 100%;
+                border-radius: 0.52vw;
+                object-fit: cover;
+            }
+            .start {
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 5.572vw;
+                height: 5.572vw;
+            }
+        }
+        &_content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.302vw;
+            width: 53.16%;
+            .title_24 {
+                color: #015019;
+            }
+        }
+        .mobile, .full {
+            text-align: right;
+            color: rgba(0, 0, 0, 0.51);
+        }
+        .video .start {
+            display: block;
+            filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7498%) hue-rotate(156deg) brightness(115%) contrast(94%);
+        }
+        .divider {
+            width: 100%;
+            height: 1px;
+            background: #d5e0d5;
+        }
+        .mobile {
+            display: none;
+        }
+    }
+}

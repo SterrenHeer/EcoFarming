@@ -171,6 +171,7 @@
         padding: 1.197vw 1.666vw;
         width: calc(55.208vw - 1.666vw - 1.666vw);
         max-height: calc(90vh - 1.197vw - 1.197vw);
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
         background: #fff;
         &::-webkit-scrollbar {
             width: 0.312vw;

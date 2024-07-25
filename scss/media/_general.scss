@@ -6,6 +6,7 @@
 @import 'brand';
 @import 'weeds';
 @import 'contacts';
+@import 'publications';
 @import 'footer';
 
 .hide {
@@ -42,6 +43,9 @@
 			height: 8.333vw;
 			border-radius: 1.666vw;
 			font-size: 3.888vw;
+		}
+		img {
+			height: 3.333vw;
 		}
 	}
 }
