@@ -1,0 +1,94 @@
+@media (max-width: 992px) {
+    .culture {
+        padding-top: 4.166vw;
+        &_wrapper {
+            width: 100%;
+        }
+        &_icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 1.666vw;
+            width: calc(16.388vw - 1.666vw - 1.666vw);
+            height: calc(16.388vw - 1.666vw - 1.666vw);
+            border-radius: 2.777vw;
+        }
+        &_items {
+            gap: 3.333vw;
+            margin-top: 15.555vw;
+        }
+        &_item {
+            width: 48.07%;
+            height: 41.666vw;
+            border-radius: 2.77vw;
+            img {
+                border-radius: 2.77vw;
+            }
+            .title {
+                height: 7.777vw;
+                border-radius: 2.77vw;
+                font-size: 3.333vw;
+            }
+        }
+        &_text {
+            margin-top: 8.333vw;
+            ul {
+                margin: 6.111vw 0 0 5.111vw;
+            }
+        }
+        &_tab {
+            margin-top: 11.666vw;
+            &_active {
+                &::after {
+                    left: -0.355vw;
+                    bottom: -1.222vw;
+                    width: calc(100% + 0.355vw + 0.355vw);
+                    height: 0.833vw;
+                    border-radius: 1.388vw;
+                }
+            }
+            &_wrapper {
+                flex-direction: column;
+                gap: 2.777vw 0;
+            }
+            &_item {
+                gap: 3.333vw;
+                img {
+                    width: 19.166vw;
+                    height: 19.166vw;
+                }
+            }
+            &_content {
+                display: flex;
+                flex-direction: column;
+                gap: 0.625vw;
+                width: 74%;
+                .title {
+                    font-size: 2.777vw;
+                }
+                .title_20 {
+                    font-size: 3.333vw;
+                }
+                .title_32 {
+                    font-size: 4.444vw;
+                }
+            }
+        }
+        &_headers {
+            flex-wrap: wrap;
+            gap: 2.777vw 5.555vw;
+            margin-top: 3.055vw;
+            .title {
+                font-size: 3.333vw;
+            }
+        }
+        .head {
+            margin-top: 8.611vw;
+            padding: 3.888vw 2.5vw;
+        }
+        .title_48 {
+            max-width: 65.555vw;
+            font-size: 6.666vw;
+        }
+    }
+}

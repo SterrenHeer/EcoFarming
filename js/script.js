@@ -103,6 +103,9 @@ if (document.querySelector('.publications_slider') != null) {
 if (document.querySelector('.brand_tab') != null) {
     tabs('.brand_header', '.brand_tab', '.brand_headers', 'brand_tab_active');
 }
+if (document.querySelector('.culture_tab') != null) {
+    tabs('.culture_header', '.culture_tab', '.culture_headers', 'culture_tab_active');
+}
 
 $("form").submit(function (event) {
     event.preventDefault();

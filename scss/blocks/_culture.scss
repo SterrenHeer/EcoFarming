@@ -59,7 +59,69 @@
             margin: 1.718vw 0 0 1.518vw;
         }
     }
+    &_tab {
+        margin-top: 5.26vw;
+        &_active {
+            &::after {
+                position: relative;
+                left: -0.277vw;
+                bottom: -0.32vw;
+                content: '';
+                display:block;
+                width: calc(100% + 0.277vw + 0.277vw);
+                height: 0.156vw;
+                border-radius: 0.26vw;
+                background: #015019;
+            }
+        }
+        &_wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2.343vw 0;
+        }
+        &_item {
+            display: flex;
+            gap: 2.604vw;
+            cursor: pointer;
+            img {
+                width: 5.989vw;
+                height: 5.989vw;
+            }
+        }
+        &_content {
+            display: flex;
+            flex-direction: column;
+            gap: 0.625vw;
+            width: 30.572vw;
+            .title {
+                color: #757575;
+            }
+            .title_20 {
+                color: #000;
+            }
+            .title_32 {
+                color: #015019;
+            }
+        }
+    }
+    &_headers {
+        display: flex;
+        align-items: center;
+        gap: 0.781vw;
+        margin-top: 0.833vw;
+        .title {
+            cursor: pointer;
+            user-select: none;
+        }
+    }
     .container {
         position: relative;
+    }
+    .head {
+        margin-top: 3.854vw;
+        padding: 0.625vw 0.937vw;
+        background: #015019;
+        color: #fff;
     }
 }
