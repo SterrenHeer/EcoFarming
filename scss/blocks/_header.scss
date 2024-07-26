@@ -48,7 +48,7 @@
         object-fit: cover;
     }
     &_main {
-        position: fixed;
+        position: absolute;
         z-index: 5;
         top: 1.45vw;
         width: 100%;
@@ -60,8 +60,22 @@
             height: 4.8vw;
         }
     }
-    &_logo img {
-        height: 4.8vw;
+    &_logo {
+        position: relative;
+        &_bg {
+            position: absolute;
+            z-index: -1;
+            top: -5.312vw;
+            left: -11.145vw;
+            width: 29.739vw;
+            height: 13.437vw;
+            border-radius: 100%;
+            background: rgba(255, 255, 255, 0.65);
+            filter: blur(70px);
+        }
+        img {
+            height: 4.8vw;
+        }
     }
     &_buttons {
         display: flex;

@@ -41,8 +41,18 @@
                 height: 13.333vw;
             }
         }
-        &_logo img {
-            height: 13.333vw;
+        &_logo {
+            &_bg {
+                top: -3.611vw;
+                left: -3.611vw;
+                width: 46.666vw;
+                height: 20vw;
+                background: #fff;
+                filter: blur(20px);
+            }
+            img {
+                height: 13.333vw;
+            }
         }
         &_buttons {
             gap: 7.5vw;
