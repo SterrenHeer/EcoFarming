@@ -75,10 +75,26 @@
             }
         }
         &_headers {
-            flex-wrap: wrap;
-            gap: 2.777vw 5.555vw;
+            overflow-x: auto;
+            padding-bottom: 4.055vw;
+            &::-webkit-scrollbar {
+                height: 1.666vw;
+                box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+                border-radius: 1.388vw;
+                background-color: #fff;
+            }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 1.388vw;
+                background: #ffb800;;
+            }
+            &::-webkit-scrollbar-track {
+                border-radius: 1.388vw;
+                background: #fff;
+            }
+            gap: 5.555vw;
             margin-top: 3.055vw;
             .title {
+                text-wrap: nowrap;
                 font-size: 3.333vw;
             }
         }
