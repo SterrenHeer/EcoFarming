@@ -18,6 +18,11 @@
             height: 100%;
         }
     }
+    &_icon.big {
+        padding: 3.229vw;
+        width: calc(24.583vw - 3.229vw - 3.229vw);
+        height: calc(24.583vw - 3.229vw - 3.229vw);
+    }
     &_items {
         display: flex;
         flex-wrap: wrap;
@@ -55,9 +60,13 @@
     }
     &_text {
         margin-top: 4.062vw;
+        width: 65.3%;
         ul {
             margin: 1.718vw 0 0 1.518vw;
         }
+    }
+    &_text.small {
+        min-height: calc(24.583vw - 3.229vw - 3.229vw);
     }
     &_tab {
         margin-top: 5.26vw;

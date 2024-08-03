@@ -4,7 +4,7 @@
         &_wrapper {
             width: 100%;
         }
-        &_icon {
+        &_icon, &_icon.big {
             position: absolute;
             top: 0;
             right: 0;
@@ -32,9 +32,14 @@
         }
         &_text {
             margin-top: 8.333vw;
+            width: 100%;
             ul {
                 margin: 6.111vw 0 0 5.111vw;
             }
+        }
+        &_text.small {
+            margin-top: 15.555vw;
+            min-height: auto;
         }
         &_tab {
             margin-top: 11.666vw;
