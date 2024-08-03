@@ -6,8 +6,8 @@ $.get('header.html',function(response){
     if (document.querySelector('.burger') != null) {
         modal('.burger_button', 'data-close', '.burger');
     }
-    if (location.pathname.includes('index')) {
-		document.querySelector('.main').style.display = 'block';
+    if (location.pathname.includes('brand')) {
+        document.querySelector('.others.products').style.display = 'flex';
     } else if (location.pathname.includes('products') || location.pathname.includes('cultures') || location.pathname.includes('harmful')) {
         document.querySelector('.others.all').style.display = 'flex';
     } else if (location.pathname.includes('weed')) {
@@ -15,7 +15,7 @@ $.get('header.html',function(response){
     } else if (location.pathname.includes('contacts') || location.pathname.includes('publication')) {
         document.querySelector('.others.company').style.display = 'flex';
     } else {
-        document.querySelector('.others.products').style.display = 'flex';
+        document.querySelector('.main').style.display = 'block';
     }
     window.onscroll = function() {
         let header = document.querySelector(".header_main .container");

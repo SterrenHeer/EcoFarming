@@ -50,8 +50,10 @@ a {
 	.rotate {
 		img {
 			transform: rotate(180deg);
-			filter: brightness(0) saturate(100%) invert(70%) sepia(0%) saturate(446%) hue-rotate(180deg) brightness(111%) contrast(86%);
 		}
+	}
+	.lock img {
+		filter: brightness(0) saturate(100%) invert(70%) sepia(0%) saturate(446%) hue-rotate(180deg) brightness(111%) contrast(86%);
 	}
 }
 

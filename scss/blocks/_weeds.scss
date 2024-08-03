@@ -13,6 +13,9 @@
             margin-top: 3.541vw;
             color: #015019;
         }
+        .nomt {
+            margin-top: 0;
+        }
         img {
             display: none;
         }
@@ -184,9 +187,6 @@
             padding: 0.625vw 0.937vw;
             background: #015019;
             color: #fff;
-        }
-        .pagination {
-            display: none;
         }
     }
     .pagination {
