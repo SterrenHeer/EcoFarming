@@ -1,0 +1,37 @@
+.search_results {
+    padding-top: 2.291vw;
+    &_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2.083vw 0;
+        margin-top: 2.958vw;
+    }
+    &_item {
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        width: 48.01%;
+        cursor: pointer;
+        .title_32 {
+            color: #015019;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .search_results {
+        padding-top: 3.333vw;
+        &_wrapper {
+            gap: 2.777vw 0;
+            margin-top: 6.666vw;
+        }
+        &_item {
+            gap: 1.3vw;
+            width: 100%;
+        }
+    }
+}
