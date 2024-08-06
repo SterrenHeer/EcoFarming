@@ -97,6 +97,9 @@
         border-radius: 0.52vw;
         box-shadow: 1px 2px 4px 0 #222831;
         background: #053a15;
+        & > * {
+            user-select: none;
+        }
         img {
             width: 2.552vw;
         }
@@ -142,6 +145,27 @@
         border-radius: 0.26vw;
         background: rgba(214, 214, 214, 0.4);
         cursor: pointer;
+    }
+    &_form {
+        display: none;
+        margin-top: 3.385vw;
+        width: 100%;
+        input {
+            width: calc(100% - 0.468vw - 0.468vw);
+            padding: 0.572vw 0.468vw;
+            border: 1px solid #fff;
+            border-radius: 0.52vw;
+            background: linear-gradient(131deg, #fff 0%, rgba(255, 255, 255, 0.8) 100%);
+            font-weight: 400;
+            font-size: 0.833vw;
+            color: rgba(0, 0, 0, 0.6);
+            outline: none;
+            &::placeholder {
+                font-weight: 400;
+                font-size: 0.833vw;
+                color: rgba(0, 0, 0, 0.6);
+            }
+        }
     }
     &_active {
         background: #004705;

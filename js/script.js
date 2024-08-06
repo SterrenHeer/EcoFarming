@@ -53,6 +53,11 @@ $(window).on( "resize, scroll", () => {
     $('.weeds_links').removeClass("flex")
 });
 
+$('.weather_right .button_city').click(() => {
+    $('.button_city').toggleClass('hide');
+    $('.weather_form').toggleClass('flex');
+});
+
 if (document.querySelector('.weather_slider') != null) {
     slider({
         containerSelector: '.weather_slider',
@@ -105,6 +110,9 @@ if (document.querySelector('.brand_tab') != null) {
 }
 if (document.querySelector('.culture_tab') != null) {
     tabs('.culture_header', '.culture_tab', '.culture_headers', 'culture_tab_active');
+}
+if (document.querySelector('.weather_right') != null) {
+    tabs('.weather_degree', '.weather_parameters', '.weather_degrees', 'active');
 }
 
 $("form").submit(function (event) {

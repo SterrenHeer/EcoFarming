@@ -47,8 +47,8 @@
         &_left {
             padding: 7.5vw 5.277vw 7.222vw;
             width: calc(100% - 5.277vw - 5.277vw);
-            height: calc(80vw - 7.5vw - 7.222vw);
-            
+            min-height: calc(80vw - 7.5vw - 7.222vw);
+            height: auto;
         }
         &_right {
             padding: 7.222vw 6.388vw 9.166vw 7.777vw;
@@ -56,6 +56,18 @@
             height: calc(111.111vw - 7.222vw - 7.777vw);
             .button {
                 margin-top: 5.555vw;
+            }
+        }
+        &_form {
+            margin-top: 5.555vw;
+            input {
+                width: calc(100% - 3.611vw - 3.611vw);
+                padding: 3.055vw 3.611vw;
+                border-radius: 2.777vw;
+                font-size: 4.444vw;
+                &::placeholder {
+                    font-size: 4.444vw;
+                }
             }
         }
         &_bg {

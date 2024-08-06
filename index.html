@@ -31,20 +31,64 @@
 					</div>
 					<div class="weather_right">
 						<img src="img/weather_bg_2.png" class="weather_bg" alt="weather_bg">
-						<div class="weather_parameter nomt">
-							<div class="title title_28 bold">АТМОСФЕРНЫЕ<br>ОСАДКИ</div>
-							<div class="title title_28 medium">0%</div>
+						<div class="weather_parameters">
+							<div class="weather_parameter nomt">
+								<div class="title title_28 bold">АТМОСФЕРНЫЕ<br>ОСАДКИ</div>
+								<div class="title title_28 medium">0%</div>
+							</div>
+							<div class="weather_parameter">
+								<div class="title title_28 bold">ВЛАЖНОСТЬ</div>
+								<div class="title title_28 medium">42%</div>
+							</div>
+							<div class="weather_parameter">
+								<div class="title title_28 bold">ВЕТЕР</div>
+								<div class="title title_28 medium">3 км/ч</div>
+							</div>
 						</div>
-						<div class="weather_parameter">
-							<div class="title title_28 bold">ВЛАЖНОСТЬ</div>
-							<div class="title title_28 medium">42%</div>
+						<div class="weather_parameters">
+							<div class="weather_parameter nomt">
+								<div class="title title_28 bold">АТМОСФЕРНЫЕ<br>ОСАДКИ</div>
+								<div class="title title_28 medium">20%</div>
+							</div>
+							<div class="weather_parameter">
+								<div class="title title_28 bold">ВЛАЖНОСТЬ</div>
+								<div class="title title_28 medium">52%</div>
+							</div>
+							<div class="weather_parameter">
+								<div class="title title_28 bold">ВЕТЕР</div>
+								<div class="title title_28 medium">34 км/ч</div>
+							</div>
 						</div>
-						<div class="weather_parameter">
-							<div class="title title_28 bold">ВЕТЕР</div>
-							<div class="title title_28 medium">3 км/ч</div>
+						<div class="weather_parameters">
+							<div class="weather_parameter nomt">
+								<div class="title title_28 bold">АТМОСФЕРНЫЕ<br>ОСАДКИ</div>
+								<div class="title title_28 medium">40%</div>
+							</div>
+							<div class="weather_parameter">
+								<div class="title title_28 bold">ВЛАЖНОСТЬ</div>
+								<div class="title title_28 medium">32%</div>
+							</div>
+							<div class="weather_parameter">
+								<div class="title title_28 bold">ВЕТЕР</div>
+								<div class="title title_28 medium">2 км/ч</div>
+							</div>
+						</div>
+						<div class="weather_parameters">
+							<div class="weather_parameter nomt">
+								<div class="title title_28 bold">АТМОСФЕРНЫЕ<br>ОСАДКИ</div>
+								<div class="title title_28 medium">60%</div>
+							</div>
+							<div class="weather_parameter">
+								<div class="title title_28 bold">ВЛАЖНОСТЬ</div>
+								<div class="title title_28 medium">72%</div>
+							</div>
+							<div class="weather_parameter">
+								<div class="title title_28 bold">ВЕТЕР</div>
+								<div class="title title_28 medium">15 км/ч</div>
+							</div>
 						</div>
 						<div class="weather_degrees">
-							<div class="weather_degree active">
+							<div class="weather_degree">
 								<img src="icons/sunny.svg" alt="sunny">
 								<div class="title title_20">Вт</div>
 								<div class="title title_20 bold">30 °C</div>
@@ -68,6 +112,9 @@
 						<button class="button button_city">
 							<img src="icons/weather_map.svg" alt="map">выбрать город
 						</button>
+						<form action="#" class="weather_form" method="get">
+							<input type="text" placeholder="Введите название города" name="city" onchange="submit();">
+						</form>
 					</div>
 				</div>
 				<div class="weather_controls">
@@ -116,6 +163,7 @@
 	<script src="js/jquery-3.7.1.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/modal.js"></script>
+	<script src="js/tabs.js"></script>
 	<script src="js/slider.js"></script>
 	<script src="js/script.js"></script>
 </body>
