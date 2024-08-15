@@ -43,6 +43,9 @@
             display: flex;
             flex-direction: column;
         }
+        a:hover {
+            color: #7BA254;
+        }
         img {
             height: 1.822vw;
             &:hover {

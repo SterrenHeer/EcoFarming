@@ -272,8 +272,10 @@
         }
     }
     &_search {
-        width: 76%;
-        border: none;
+        padding: 0.145vw 1.166vw;
+        width: calc(50% - 1.166vw - 1.166vw);
+        border: 1px solid #757575;
+        border-radius: 0.52vw;
         font-weight: 400;
         font-size: 1.25vw;
         color: #757575;
