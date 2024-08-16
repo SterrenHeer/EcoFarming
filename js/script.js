@@ -12,7 +12,7 @@ $.get('header.html',function(response){
         document.querySelector('.others.all').style.display = 'flex';
     } else if (location.pathname.includes('weed')) {
         document.querySelector('.others.harmful').style.display = 'flex';
-    } else if (location.pathname.includes('contacts') || location.pathname.includes('publication')) {
+    } else if (location.pathname.includes('contacts') || location.pathname.includes('publication') || location.pathname.includes('company')) {
         document.querySelector('.others.company').style.display = 'flex';
     } else {
         if (!location.pathname.includes('search_results')) {

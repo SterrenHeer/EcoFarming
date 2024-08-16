@@ -1,0 +1,62 @@
+.company {
+    padding-top: 2.291vw;
+    &_top {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3.541vw;
+        img {
+            width: 30.364vw;
+            height: 12.187vw;
+        }
+        .title_24 {
+            width: 55vw;
+        }
+    }
+    .container {
+        & > img {
+            margin-top: 3.541vw;
+            width: 100%;
+            height: 35.052vw;
+            object-fit: cover;
+        }
+        & > .title_24 {
+            margin-top: 2.291vw;
+        }
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .company {
+        padding-top: 5.555vw;
+        &_top {
+            margin-top: 1.666vw;
+            img {
+                display: none;
+            }
+            .title_24 {
+                width: 100%;
+            }
+        }
+        .container {
+            & > img {
+                margin-top: 11.111vw;
+                height: 35vw;
+            }
+            & > .title_24 {
+                margin-top: 11.111vw;
+            }
+        }
+        .title_48 {
+            display: flex;
+            justify-content: space-between;
+        }
+        .mobile {
+            display: block;
+            width: 30.555vw;
+            height: 12.222vw;
+        }
+    }
+}

@@ -22,15 +22,16 @@
             display: flex;
             gap: 4.01vw;
         }
+        a:hover {
+            color: #7BA254;
+        }
     }
     &_item {
         display: flex;
         flex-direction: column;
         gap: 0.485vw;
-        .wrap {
-            display: flex;
-            flex-direction: column;
-            gap: 0.285vw;
+        .wrap .title_24 {
+            line-height: 2.083vw;
         }
     }
     &_info {
