@@ -64,6 +64,15 @@
         &_bottom {
             margin-top: 6.388vw;
         }
+        &_main {
+            display: block;
+            margin-left: auto;
+            padding-top: 4.722vw;
+            font-size: 5.555vw;
+        }
+        .main {
+            display: none;
+        }
     }
 }
 @media (max-width: 768px) {

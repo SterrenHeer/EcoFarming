@@ -15,7 +15,9 @@ a {
 .br {
 	display: none;
 }
-
+section {
+	position: relative;
+}
 .pagination {
 	display: flex;
 	justify-content: center;
@@ -53,6 +55,17 @@ a {
 	}
 	.lock img {
 		filter: brightness(0) saturate(100%) invert(70%) sepia(0%) saturate(446%) hue-rotate(180deg) brightness(111%) contrast(86%);
+	}
+}
+.hierarhy {
+	position: absolute;
+	top: 0.8vw;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.2vw 0.52vw;
+	& > .title {
+		color: #747474;
 	}
 }
 
