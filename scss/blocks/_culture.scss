@@ -92,18 +92,18 @@
         }
         &_item {
             display: flex;
-            gap: 2.604vw;
+            gap: 1.104vw;
             cursor: pointer;
             img {
-                width: 5.989vw;
-                height: 5.989vw;
+                width: 2.994vw;
+                height: 2.994vw;
             }
         }
         &_content {
             display: flex;
             flex-direction: column;
             gap: 0.625vw;
-            width: 30.572vw;
+            width: 38.166vw;
             .title {
                 color: #757575;
             }

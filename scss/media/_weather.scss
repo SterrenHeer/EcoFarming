@@ -51,11 +51,14 @@
             height: auto;
         }
         &_right {
-            padding: 7.222vw 6.388vw 9.166vw 7.777vw;
+            padding: 4.222vw 6.388vw 6.166vw 7.777vw;
             width: calc(100% - 6.388vw - 7.777vw);
-            height: calc(111.111vw - 7.222vw - 7.777vw);
+            height: calc(111.111vw - 4.222vw - 6.166vw);
             .button {
                 margin-top: 5.555vw;
+            }
+            .title_24 {
+                font-size: 3.333vw;
             }
         }
         &_form {
@@ -72,6 +75,9 @@
         }
         &_bg {
             border-radius: 8.333vw;
+        }
+        &_parameters {
+            margin-top: 3.555vw;
         }
         &_parameter {
             margin-top: 5.555vw;

@@ -50,9 +50,9 @@
     }
     &_right {
         position: relative;
-        padding: 3.591vw 2.291vw 4.01vw 2.604vw;
+        padding: 2.591vw 2.291vw 2.01vw 2.604vw;
         width: calc(51.35% - 2.291vw - 2.604vw);
-        height: calc(31.562vw - 3.591vw - 4.01vw);
+        height: calc(31.562vw - 2.591vw - 2.01vw);
         .button {
             margin-top: 3.385vw;
             width: 100%;
@@ -67,6 +67,9 @@
         height: 100%;
         border-radius: 1.562vw;
         object-fit: cover;
+    }
+    &_parameters {
+        margin-top: 1.181vw;
     }
     &_parameter {
         display: flex;

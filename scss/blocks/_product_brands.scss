@@ -13,15 +13,15 @@
         width: 48.01%;
         cursor: pointer;
         img {
-            width: 5.989vw;
-            height: 5.989vw;
+            width: 2.994vw;
+            height: 2.994vw;
         }
     }
     &_content {
         display: flex;
         flex-direction: column;
         gap: 0.625vw;
-        width: 34.166vw;
+        width: 36.166vw;
         .title {
             color: #757575;
         }
@@ -44,13 +44,13 @@
         &_item {
             width: 100%;
             img {
-                width: 19.166vw;
-                height: 19.166vw;
+                width: 9.583vw;
+                height: 9.583vw;
             }
         }
         &_content {
             gap: 1.666vw;
-            width: 64.166vw;
+            width: 74.166vw;
             .title {
                 font-size: 2.777vw;
             }
